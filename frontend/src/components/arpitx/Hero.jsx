@@ -20,7 +20,7 @@ export default function Hero() {
       data-testid="hero-section"
       className="relative min-h-screen pt-28 lg:pt-32 pb-16 overflow-hidden"
     >
-      {/* Ambient orange glow */}
+      {/* Ambient blue glow */}
       <div
         aria-hidden
         className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full pointer-events-none"

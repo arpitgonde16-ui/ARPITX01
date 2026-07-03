@@ -17,7 +17,7 @@ import { Toaster } from "@/components/ui/sonner";
 
 function App() {
   return (
-    <div className="film-grain min-h-screen bg-[#0a0a0a] text-[#f0f0f0] font-body relative">
+    <div className="film-grain min-h-screen bg-[#050505] text-[#f5f5f5] font-body relative">
       <ScrollProgress />
       <MouseGlow />
       <Nav />
