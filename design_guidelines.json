@@ -1,0 +1,204 @@
+{
+  "theme": "Dark",
+  "archetype": "5 (Luxury/Cinematic) + 4 (Swiss & High-Contrast)",
+  "global_rules": {
+    "aesthetic": "Premium cinematic documentary feel inspired by Netflix title cards. Bold, energetic, highly polished. No photo of the person; text-only wordmark ARPITX. Cinematic grain/scanline overlays.",
+    "testing_requirement": "All interactive and key informational elements MUST include a data-testid attribute in kebab-case (e.g., data-testid=\"hero-cta-button\")."
+  },
+  "colors": {
+    "background": "#0a0a0a",
+    "surface": "#111111",
+    "surface2": "#181818",
+    "accent_orange": "#FF3D00",
+    "accent_gold": "#FFB800",
+    "text_primary": "#f0f0f0",
+    "text_muted": "#888888",
+    "border": "rgba(255,255,255,0.08)",
+    "overlay": "rgba(10, 10, 10, 0.6)"
+  },
+  "typography": {
+    "font_families": {
+      "headings": "'Black Ops One', display",
+      "subheadings": "'Barlow Condensed', sans-serif",
+      "body": "'Barlow', sans-serif"
+    },
+    "scale_rules": {
+      "h1": "text-5xl md:text-7xl lg:text-[8vw] uppercase tracking-tighter leading-none",
+      "h2": "text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight",
+      "h3": "text-2xl md:text-3xl uppercase tracking-wide",
+      "overline": "text-sm md:text-base uppercase tracking-[0.3em] text-[#FF3D00]",
+      "body": "text-base md:text-lg tracking-normal leading-relaxed text-[#888888]"
+    },
+    "alignment": "Strictly left-aligned or asymmetric editorial layouts. Avoid center-everything default."
+  },
+  "layout_spacing": {
+    "philosophy": "Heavy negative space. Asymmetric editorial layouts. Orange knockout blocks.",
+    "scale": "Use Tailwind p-4, p-8, p-16, p-24, p-32. Containers with borders need internal p-8 to p-12.",
+    "grid": "Bento Grid Protocol. Avoid symmetric bootstrap columns. Use col-span offsets to create tension."
+  },
+  "motion_interactions": {
+    "scroll": "Smooth scrolling (lenis mandatory). Scroll progress indicator in orange (#FF3D00).",
+    "effects": "Mouse-follow orange glow effect. Background film grain texture (CSS noise overlay).",
+    "reveals": "Text reveal animations (staggered letters/words). Section reveal on scroll (framer-motion).",
+    "components": "Magnetic buttons, smooth 60fps parallax, animated counters for stats."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#FF3D00] text-white hover:bg-[#FFB800] transition-colors duration-300 rounded-none px-8 py-4 font-bold tracking-widest uppercase",
+      "secondary": "bg-transparent border border-[#FF3D00] text-[#FF3D00] hover:bg-[#FF3D00] hover:text-white transition-all duration-300 rounded-none px-8 py-4 uppercase"
+    },
+    "cards": {
+      "glassmorphism": "bg-[#111111]/80 backdrop-blur-md border border-[rgba(255,255,255,0.08)] rounded-none hover:border-[#FF3D00]/50 transition-all duration-500",
+      "hover_state": "Adds a subtle inset or outset orange glow box-shadow."
+    },
+    "marquee": {
+      "style": "bg-[#FF3D00] text-black py-4 overflow-hidden whitespace-nowrap",
+      "typography": "font-['Black_Ops_One'] text-2xl md:text-4xl uppercase tracking-wider"
+    }
+  },
+  "sections_blueprint": [
+    {
+      "id": "hero",
+      "type": "split_asymmetric",
+      "details": {
+        "content": "Wordmark ARPITX taking massive screen real estate. High contrast.",
+        "media": "Floating YouTube video (https://youtu.be/UULJ3cp1pfo) with an electric orange (#FF3D00) accent frame. Auto-playing (simulated or actual embed with mute=1).",
+        "stats": "Animated count-up stats. Values: '1' Documentary Published, '18' Years Old, Self-Taught (text), Premiere Pro + After Effects (text).",
+        "decorations": "Mouse-follow orange glow, cinematic grain texture absolute overlay (pointer-events-none)."
+      }
+    },
+    {
+      "id": "marquee_trust_bar",
+      "type": "infinite_scroll",
+      "details": {
+        "text_items": ["PREMIERE PRO", "AFTER EFFECTS", "DAVINCI RESOLVE", "CINEMATIC EDITING", "SOUND DESIGN", "COLOR GRADING"],
+        "separator": "✦",
+        "styling": "Orange background, black bold text."
+      }
+    },
+    {
+      "id": "featured_documentary",
+      "type": "showcase",
+      "details": {
+        "heading": "FEATURED WORK",
+        "content": "Embedded YouTube player inside a stylized container with a fullscreen lightbox trigger. Large cinematic typography overlapping the video frame.",
+        "layout": "Overlapping layers. Dark background intersecting with surface2 blocks."
+      }
+    },
+    {
+      "id": "short_form_portfolio",
+      "type": "bento_grid",
+      "details": {
+        "heading": "SHORT FORM / REELS",
+        "items": [
+          { "type": "real", "link": "https://www.instagram.com/reel/DaTJbjWCHAN/", "description": "Real Instagram Reel embed or stylized mock frame" },
+          { "type": "placeholder", "text": "IN PRODUCTION", "subtext": "COMING SOON" },
+          { "type": "placeholder", "text": "IN PRODUCTION", "subtext": "COMING SOON" },
+          { "type": "placeholder", "text": "IN PRODUCTION", "subtext": "COMING SOON" },
+          { "type": "placeholder", "text": "IN PRODUCTION", "subtext": "COMING SOON" },
+          { "type": "placeholder", "text": "IN PRODUCTION", "subtext": "COMING SOON" }
+        ],
+        "styling": "The placeholder cards must look like VHS tapes or raw film strips with red/orange tape labels. Grungy, editorial."
+      }
+    },
+    {
+      "id": "services",
+      "type": "grid_cards",
+      "details": {
+        "heading": "ARSENAL / CAPABILITIES",
+        "items": [
+          { "icon": "🎬", "title": "Documentary Editing", "desc": "Long-form narrative construction." },
+          { "icon": "📱", "title": "Short-form Content", "desc": "High-retention TikToks and Reels." },
+          { "icon": "✨", "title": "Motion Graphics", "desc": "Dynamic visual enhancements." },
+          { "icon": "🎨", "title": "Color Grading", "desc": "Cinematic look development." },
+          { "icon": "🔊", "title": "Sound Design", "desc": "Immersive audio mixing." },
+          { "icon": "🖼️", "title": "Thumbnail Consult", "desc": "Click-through rate optimization." }
+        ],
+        "styling": "Glassmorphism cards with emoji icons. Hover triggers orange glow."
+      }
+    },
+    {
+      "id": "process",
+      "type": "timeline",
+      "details": {
+        "heading": "THE PROTOCOL",
+        "steps": [
+          { "num": "01", "title": "DISCOVERY", "desc": "Aligning on vision, pacing, and assets." },
+          { "num": "02", "title": "ASSEMBLY", "desc": "Structuring the narrative A-cut." },
+          { "num": "03", "title": "REFINEMENT", "desc": "VFX, sound, pacing, and color." },
+          { "num": "04", "title": "DELIVERY", "desc": "Final export and thumbnail sync." }
+        ],
+        "styling": "Numbered orange badges. Animated connecting line that fills with #FF3D00 on scroll."
+      }
+    },
+    {
+      "id": "pricing",
+      "type": "pricing_tiers",
+      "details": {
+        "heading": "ENGAGEMENT TIERS",
+        "cards": [
+          { "tier": "STARTER", "price": "$15", "period": "/ video", "features": ["Basic Cuts", "Standard Color", "1 Revision"] },
+          { "tier": "PRO", "price": "$35", "period": "/ video", "features": ["Cinematic Edit", "Advanced VFX", "Sound Design", "3 Revisions"], "highlight": true },
+          { "tier": "BUNDLE", "price": "$90", "period": "/ month", "features": ["4 Pro Videos", "Priority Delivery", "Unlimited Revisions", "Thumbnail Included"] }
+        ],
+        "styling": "Pro card must have glowing orange border and 'MOST POPULAR' badge. BlackOps font for prices."
+      }
+    },
+    {
+      "id": "faq",
+      "type": "accordion",
+      "details": {
+        "heading": "INTEL / FAQ",
+        "questions": [
+          { "q": "What is your typical turnaround time?", "a": "For standard short-form, 24-48 hours. For full documentaries, 1-2 weeks depending on scope." },
+          { "q": "Do you offer revisions?", "a": "Yes, tiers include specified revision rounds to ensure the final product matches your vision." },
+          { "q": "What software do you use?", "a": "Adobe Premiere Pro for cutting, After Effects for motion graphics, and DaVinci Resolve for color." },
+          { "q": "Can you source stock footage and music?", "a": "Absolutely. I have access to premium libraries for cinematic b-roll and royalty-free scores." },
+          { "q": "How do we transfer large video files?", "a": "Google Drive, Frame.io, or Dropbox are preferred for raw asset handoffs." },
+          { "q": "Do you edit gaming or vlog content?", "a": "My specialty is high-end documentary and cinematic storytelling. Fast-paced vlogs and gaming highlights are considered on a case-by-case basis." }
+        ],
+        "styling": "Minimalist accordion. Active state reveals an electric orange left border and #FFB800 text."
+      }
+    },
+    {
+      "id": "contact_and_footer",
+      "type": "form_footer",
+      "details": {
+        "heading": "INITIATE TRANSMISSION",
+        "form": {
+          "action": "mailto:arpitgonde16@gmail.com",
+          "fields": ["Name", "Email", "Project Brief"],
+          "button": "SEND DIRECTIVE",
+          "interaction": "Orange tick success animation on simulated submit before mailto triggers."
+        },
+        "footer_links": [
+          { "label": "INSTAGRAM", "url": "https://instagram.com/raw_arpitx" },
+          { "label": "YOUTUBE", "url": "#" },
+          { "label": "FIVERR", "url": "#" },
+          { "label": "UPWORK", "url": "#" }
+        ],
+        "styling": "Massive text 'ARPITX' in footer background. Deep #050505 background for footer block."
+      }
+    }
+  ],
+  "media_assets": {
+    "videos": [
+      { "id": "hero_vid", "url": "https://youtu.be/UULJ3cp1pfo", "type": "youtube" },
+      { "id": "ig_reel", "url": "https://www.instagram.com/reel/DaTJbjWCHAN/", "type": "instagram" }
+    ],
+    "images": [
+      {
+        "category": "texture",
+        "description": "Abstract cinematic film grain dark",
+        "url": "https://images.unsplash.com/photo-1566410824233-a8011929225c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGNpbmVtYXRpYyUyMGZpbG0lMjBncmFpbiUyMGRhcmt8ZW58MHx8fHwxNzgzMDcyOTQ2fDA&ixlib=rb-4.1.0&q=85",
+        "usage": "Use as a fixed background mix-blend-overlay or opacity-10 element to add grit."
+      },
+      {
+        "category": "texture",
+        "description": "Abstract warm orange and black gradient",
+        "url": "https://images.unsplash.com/photo-1762716514363-13d1fad2c854?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxnbG93aW5nJTIwb3JhbmdlJTIwbGlnaHQlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3ODMwNzI5NDZ8MA&ixlib=rb-4.1.0&q=85",
+        "usage": "Use behind cards or text as a blurry ambient glow element."
+      }
+    ]
+  }
+}
