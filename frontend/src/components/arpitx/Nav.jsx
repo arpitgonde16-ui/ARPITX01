@@ -25,7 +25,7 @@ export default function Nav() {
       data-testid="site-nav"
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#0a0a0a]/85 backdrop-blur-md border-b border-[rgba(255,255,255,0.08)]"
+          ? "bg-[#050505]/85 backdrop-blur-md border-b border-[rgba(255,255,255,0.08)]"
           : "bg-transparent"
       }`}
     >
@@ -33,9 +33,9 @@ export default function Nav() {
         <a
           data-testid="nav-logo"
           href="#top"
-          className="font-display text-2xl lg:text-3xl tracking-widest text-white hover:text-[#FF3D00] transition-colors"
+          className="font-display text-2xl lg:text-3xl tracking-widest text-white hover:text-[#3B82F6] transition-colors"
         >
-          ARPIT<span className="text-[#FF3D00]">X</span>
+          ARPIT<span className="text-[#3B82F6]">X</span>
         </a>
         <nav className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
@@ -43,7 +43,7 @@ export default function Nav() {
               key={l.href}
               data-testid={`nav-link-${l.label.toLowerCase()}`}
               href={l.href}
-              className="font-condensed uppercase text-sm tracking-[0.25em] text-[#f0f0f0]/70 hover:text-[#FF3D00] transition-colors"
+              className="font-condensed uppercase text-sm tracking-[0.25em] text-[#f0f0f0]/70 hover:text-[#3B82F6] transition-colors"
             >
               {l.label}
             </a>
@@ -52,7 +52,7 @@ export default function Nav() {
         <a
           data-testid="nav-hire-cta"
           href="#contact"
-          className="hidden lg:inline-flex items-center gap-2 bg-[#FF3D00] text-black font-condensed uppercase text-sm font-bold tracking-widest px-5 py-2.5 hover:bg-[#FFB800] transition-colors"
+          className="hidden lg:inline-flex items-center gap-2 bg-[#3B82F6] text-black font-condensed uppercase text-sm font-bold tracking-widest px-5 py-2.5 hover:bg-[#60A5FA] transition-colors"
         >
           Hire Me <span>→</span>
         </a>
@@ -68,13 +68,13 @@ export default function Nav() {
         </button>
       </div>
       {open && (
-        <div className="lg:hidden bg-[#0a0a0a] border-t border-[rgba(255,255,255,0.08)] px-6 py-6 space-y-4">
+        <div className="lg:hidden bg-[#050505] border-t border-[rgba(255,255,255,0.08)] px-6 py-6 space-y-4">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block font-condensed uppercase tracking-widest text-white hover:text-[#FF3D00]"
+              className="block font-condensed uppercase tracking-widest text-white hover:text-[#3B82F6]"
             >
               {l.label}
             </a>
@@ -82,7 +82,7 @@ export default function Nav() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="inline-block bg-[#FF3D00] text-black font-condensed uppercase font-bold px-5 py-3"
+            className="inline-block bg-[#3B82F6] text-black font-condensed uppercase font-bold px-5 py-3"
           >
             Hire Me →
           </a>

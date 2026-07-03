@@ -27,7 +27,7 @@ export default function Footer() {
   return (
     <footer
       data-testid="footer"
-      className="relative bg-[#050505] border-t border-[rgba(255,255,255,0.08)] overflow-hidden"
+      className="relative bg-[#030303] border-t border-[rgba(255,255,255,0.08)] overflow-hidden"
     >
       {/* Ambient glow */}
       <div
@@ -35,7 +35,7 @@ export default function Footer() {
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[300px] pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at center, rgba(255,61,0,0.20) 0%, transparent 70%)",
+            "radial-gradient(ellipse at center, rgba(59, 130, 246,0.20) 0%, transparent 70%)",
           filter: "blur(80px)",
         }}
       />
@@ -44,7 +44,7 @@ export default function Footer() {
         <div className="grid grid-cols-12 gap-10">
           <div className="col-span-12 lg:col-span-6">
             <div className="font-display uppercase text-6xl md:text-7xl lg:text-8xl text-white leading-none">
-              ARPIT<span className="text-[#FF3D00]">X</span>
+              ARPIT<span className="text-[#3B82F6]">X</span>
             </div>
             <div className="mt-4 font-condensed uppercase text-sm tracking-[0.3em] text-[#888]">
               Documentary Style Video Editing
@@ -58,7 +58,7 @@ export default function Footer() {
 
           {cols.map((c) => (
             <div key={c.title} className="col-span-6 lg:col-span-3">
-              <div className="font-condensed uppercase text-xs tracking-[0.4em] text-[#FF3D00] mb-6">
+              <div className="font-condensed uppercase text-xs tracking-[0.4em] text-[#3B82F6] mb-6">
                 {c.title}
               </div>
               <ul className="space-y-3">
@@ -69,7 +69,7 @@ export default function Footer() {
                       href={l.href}
                       target={l.external ? "_blank" : undefined}
                       rel={l.external ? "noreferrer" : undefined}
-                      className="font-display uppercase text-lg text-white hover:text-[#FF3D00] transition-colors"
+                      className="font-display uppercase text-lg text-white hover:text-[#3B82F6] transition-colors"
                     >
                       {l.label}
                     </a>

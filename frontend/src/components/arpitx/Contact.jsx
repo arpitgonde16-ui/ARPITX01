@@ -98,14 +98,14 @@ ${form.message}
     <section
       id="contact"
       data-testid="contact-section"
-      className="relative py-24 lg:py-32 bg-[#0a0a0a] overflow-hidden"
+      className="relative py-24 lg:py-32 bg-[#050505] overflow-hidden"
     >
       <div
         aria-hidden
         className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(255,61,0,0.15) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(59, 130, 246,0.15) 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -116,16 +116,16 @@ ${form.message}
           <div className="col-span-12 lg:col-span-5">
             <Reveal>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-[1px] bg-[#FF3D00]" />
-                <span className="font-condensed uppercase text-xs tracking-[0.4em] text-[#FF3D00]">
-                  Initiate Transmission
+                <div className="w-8 h-[1px] bg-[#3B82F6]" />
+                <span className="font-condensed uppercase text-xs tracking-[0.4em] text-[#3B82F6]">
+                  Get in Touch
                 </span>
               </div>
             </Reveal>
             <Reveal delay={100}>
               <h2 className="font-display uppercase text-5xl md:text-6xl lg:text-7xl leading-[0.9] tracking-tight text-white">
                 Let&apos;s create <br /> something <br />
-                <span className="text-[#FF3D00]">great.</span>
+                <span className="text-[#3B82F6]">great.</span>
               </h2>
             </Reveal>
             <Reveal delay={200}>
@@ -144,20 +144,20 @@ ${form.message}
                     href={c.href}
                     target={c.href.startsWith("mailto:") ? undefined : "_blank"}
                     rel="noreferrer"
-                    className="group flex items-center gap-5 border-b border-[rgba(255,255,255,0.08)] py-4 hover:border-[#FF3D00] transition-colors"
+                    className="group flex items-center gap-5 border-b border-[rgba(255,255,255,0.08)] py-4 hover:border-[#3B82F6] transition-colors"
                   >
-                    <div className="w-10 h-10 flex items-center justify-center border border-[#FF3D00]/40 text-[#FF3D00] group-hover:bg-[#FF3D00] group-hover:text-black transition-colors">
+                    <div className="w-10 h-10 flex items-center justify-center border border-[#3B82F6]/40 text-[#3B82F6] group-hover:bg-[#3B82F6] group-hover:text-black transition-colors">
                       {c.icon}
                     </div>
                     <div className="flex-1">
                       <div className="font-condensed uppercase text-[10px] tracking-[0.3em] text-[#666]">
                         {c.label}
                       </div>
-                      <div className="font-display text-lg text-white group-hover:text-[#FF3D00] transition-colors">
+                      <div className="font-display text-lg text-white group-hover:text-[#3B82F6] transition-colors">
                         {c.value}
                       </div>
                     </div>
-                    <span className="text-[#FF3D00] opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="text-[#3B82F6] opacity-0 group-hover:opacity-100 transition-opacity">
                       →
                     </span>
                   </a>
@@ -172,7 +172,7 @@ ${form.message}
               <form
                 data-testid="contact-form"
                 onSubmit={onSubmit}
-                className="relative bg-[#111111]/60 backdrop-blur border border-[rgba(255,255,255,0.08)] p-6 lg:p-10 corner-frame"
+                className="relative bg-[#0d0d0d]/60 backdrop-blur border border-[rgba(255,255,255,0.08)] p-6 lg:p-10 corner-frame"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="space-y-2">
@@ -184,7 +184,7 @@ ${form.message}
                       value={form.name}
                       onChange={update("name")}
                       placeholder="Your name"
-                      className="bg-transparent border-0 border-b border-[rgba(255,255,255,0.15)] rounded-none focus-visible:ring-0 focus-visible:border-[#FF3D00] px-0 h-11 text-white font-body"
+                      className="bg-transparent border-0 border-b border-[rgba(255,255,255,0.15)] rounded-none focus-visible:ring-0 focus-visible:border-[#3B82F6] px-0 h-11 text-white font-body"
                     />
                   </div>
                   <div className="space-y-2">
@@ -197,7 +197,7 @@ ${form.message}
                       value={form.email}
                       onChange={update("email")}
                       placeholder="you@channel.com"
-                      className="bg-transparent border-0 border-b border-[rgba(255,255,255,0.15)] rounded-none focus-visible:ring-0 focus-visible:border-[#FF3D00] px-0 h-11 text-white font-body"
+                      className="bg-transparent border-0 border-b border-[rgba(255,255,255,0.15)] rounded-none focus-visible:ring-0 focus-visible:border-[#3B82F6] px-0 h-11 text-white font-body"
                     />
                   </div>
                 </div>
@@ -211,7 +211,7 @@ ${form.message}
                     value={form.channel}
                     onChange={update("channel")}
                     placeholder="https://youtube.com/@yourchannel"
-                    className="bg-transparent border-0 border-b border-[rgba(255,255,255,0.15)] rounded-none focus-visible:ring-0 focus-visible:border-[#FF3D00] px-0 h-11 text-white font-body"
+                    className="bg-transparent border-0 border-b border-[rgba(255,255,255,0.15)] rounded-none focus-visible:ring-0 focus-visible:border-[#3B82F6] px-0 h-11 text-white font-body"
                   />
                 </div>
 
@@ -230,9 +230,9 @@ ${form.message}
                       >
                         <SelectValue placeholder="Select project type" />
                       </SelectTrigger>
-                      <SelectContent className="bg-[#0a0a0a] border-[rgba(255,255,255,0.15)] text-white">
+                      <SelectContent className="bg-[#050505] border-[rgba(255,255,255,0.15)] text-white">
                         {projectTypes.map((p) => (
-                          <SelectItem key={p} value={p} className="font-condensed uppercase text-sm tracking-wider focus:bg-[#FF3D00] focus:text-black">
+                          <SelectItem key={p} value={p} className="font-condensed uppercase text-sm tracking-wider focus:bg-[#3B82F6] focus:text-black">
                             {p}
                           </SelectItem>
                         ))}
@@ -253,9 +253,9 @@ ${form.message}
                       >
                         <SelectValue placeholder="Select budget" />
                       </SelectTrigger>
-                      <SelectContent className="bg-[#0a0a0a] border-[rgba(255,255,255,0.15)] text-white">
+                      <SelectContent className="bg-[#050505] border-[rgba(255,255,255,0.15)] text-white">
                         {budgets.map((b) => (
-                          <SelectItem key={b} value={b} className="font-condensed uppercase text-sm tracking-wider focus:bg-[#FF3D00] focus:text-black">
+                          <SelectItem key={b} value={b} className="font-condensed uppercase text-sm tracking-wider focus:bg-[#3B82F6] focus:text-black">
                             {b}
                           </SelectItem>
                         ))}
@@ -274,7 +274,7 @@ ${form.message}
                     onChange={update("message")}
                     placeholder="Tell me about your channel, footage, references..."
                     rows={5}
-                    className="bg-transparent border border-[rgba(255,255,255,0.15)] rounded-none focus-visible:ring-0 focus-visible:border-[#FF3D00] px-4 py-3 text-white font-body resize-none"
+                    className="bg-transparent border border-[rgba(255,255,255,0.15)] rounded-none focus-visible:ring-0 focus-visible:border-[#3B82F6] px-4 py-3 text-white font-body resize-none"
                   />
                 </div>
 
@@ -286,7 +286,7 @@ ${form.message}
                     data-testid="contact-submit"
                     type="submit"
                     disabled={sent}
-                    className="btn-magnetic relative overflow-hidden bg-[#FF3D00] text-black font-condensed uppercase font-bold tracking-widest px-8 py-4 hover:bg-[#FFB800] transition-colors disabled:opacity-80 disabled:cursor-default flex items-center gap-3"
+                    className="btn-magnetic relative overflow-hidden bg-[#3B82F6] text-black font-condensed uppercase font-bold tracking-widest px-8 py-4 hover:bg-[#60A5FA] transition-colors disabled:opacity-80 disabled:cursor-default flex items-center gap-3"
                   >
                     {sent ? (
                       <>

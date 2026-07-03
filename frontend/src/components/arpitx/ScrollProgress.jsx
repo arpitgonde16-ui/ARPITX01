@@ -21,8 +21,8 @@ export default function ScrollProgress() {
       className="fixed top-0 left-0 right-0 h-[3px] z-[100] bg-transparent pointer-events-none"
     >
       <div
-        className="h-full bg-[#FF3D00]"
-        style={{ width: `${pct}%`, boxShadow: "0 0 12px #FF3D00" }}
+        className="h-full bg-[#3B82F6]"
+        style={{ width: `${pct}%`, boxShadow: "0 0 12px #3B82F6" }}
       />
     </div>
   );

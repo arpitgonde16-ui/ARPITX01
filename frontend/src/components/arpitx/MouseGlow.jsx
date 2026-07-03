@@ -38,7 +38,7 @@ export default function MouseGlow() {
       className="hidden lg:block fixed top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none z-[1] mix-blend-screen"
       style={{
         background:
-          "radial-gradient(circle, rgba(255,61,0,0.18) 0%, rgba(255,61,0,0.06) 30%, transparent 60%)",
+          "radial-gradient(circle, rgba(59, 130, 246,0.18) 0%, rgba(59, 130, 246,0.06) 30%, transparent 60%)",
         filter: "blur(20px)",
       }}
     />

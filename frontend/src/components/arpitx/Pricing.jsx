@@ -53,21 +53,21 @@ export default function Pricing() {
     <section
       id="pricing"
       data-testid="pricing-section"
-      className="relative py-24 lg:py-32 bg-[#050505]"
+      className="relative py-24 lg:py-32 bg-[#030303]"
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
         <Reveal>
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-[1px] bg-[#FF3D00]" />
-            <span className="font-condensed uppercase text-xs tracking-[0.4em] text-[#FF3D00]">
-              Engagement Tiers
+            <div className="w-8 h-[1px] bg-[#3B82F6]" />
+            <span className="font-condensed uppercase text-xs tracking-[0.4em] text-[#3B82F6]">
+              Engagement
             </span>
           </div>
         </Reveal>
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-12 lg:mb-16">
           <Reveal delay={100}>
             <h2 className="font-display uppercase text-5xl md:text-6xl lg:text-7xl leading-[0.9] tracking-tight text-white">
-              Simple <br /> <span className="text-[#FF3D00]">pricing.</span>
+              Simple <br /> <span className="text-[#3B82F6]">pricing.</span>
             </h2>
           </Reveal>
           <Reveal delay={200}>
@@ -85,16 +85,16 @@ export default function Pricing() {
                 data-testid={`pricing-card-${t.id}`}
                 className={`relative h-full p-8 lg:p-10 flex flex-col transition-all duration-500 ${
                   t.highlight
-                    ? "bg-[#0a0a0a] border-2 border-[#FF3D00] shadow-[0_0_80px_-10px_rgba(255,61,0,0.6)] lg:scale-[1.02] z-10"
-                    : "bg-[#111111]/80 border border-[rgba(255,255,255,0.08)] hover:border-[#FF3D00]/50"
+                    ? "bg-[#050505] border-2 border-[#3B82F6] shadow-[0_0_80px_-10px_rgba(59, 130, 246,0.6)] lg:scale-[1.02] z-10"
+                    : "bg-[#0d0d0d]/80 border border-[rgba(255,255,255,0.08)] hover:border-[#3B82F6]/50"
                 }`}
               >
                 {t.highlight && (
-                  <div className="absolute -top-3 left-8 bg-[#FF3D00] text-black font-condensed uppercase text-[10px] font-bold tracking-[0.3em] px-3 py-1">
+                  <div className="absolute -top-3 left-8 bg-[#3B82F6] text-black font-condensed uppercase text-[10px] font-bold tracking-[0.3em] px-3 py-1">
                     Most Popular
                   </div>
                 )}
-                <div className="font-condensed uppercase text-xs tracking-[0.4em] text-[#FF3D00]">
+                <div className="font-condensed uppercase text-xs tracking-[0.4em] text-[#3B82F6]">
                   {t.name}
                 </div>
                 <div className="mt-6 flex items-baseline gap-2">
@@ -111,7 +111,7 @@ export default function Pricing() {
                 <ul className="mt-8 space-y-4 flex-1">
                   {t.features.map((f, k) => (
                     <li key={k} className="flex items-start gap-3 text-sm lg:text-base">
-                      <span className="mt-1 w-4 h-4 bg-[#FF3D00] flex items-center justify-center flex-shrink-0">
+                      <span className="mt-1 w-4 h-4 bg-[#3B82F6] flex items-center justify-center flex-shrink-0">
                         <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
                           <path d="M1 4L3.5 6.5L9 1" stroke="black" strokeWidth="2" />
                         </svg>
@@ -126,8 +126,8 @@ export default function Pricing() {
                   href="#contact"
                   className={`mt-10 inline-flex items-center justify-center gap-2 font-condensed uppercase font-bold tracking-widest px-6 py-4 transition-colors ${
                     t.highlight
-                      ? "bg-[#FF3D00] text-black hover:bg-[#FFB800]"
-                      : "border border-[#FF3D00] text-[#FF3D00] hover:bg-[#FF3D00] hover:text-black"
+                      ? "bg-[#3B82F6] text-black hover:bg-[#60A5FA]"
+                      : "border border-[#3B82F6] text-[#3B82F6] hover:bg-[#3B82F6] hover:text-black"
                   }`}
                 >
                   {t.cta} <span>→</span>

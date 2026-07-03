@@ -26,7 +26,7 @@ export default function Hero() {
         className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(255,61,0,0.18) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(59, 130, 246,0.18) 0%, transparent 70%)",
           filter: "blur(40px)",
         }}
       />
@@ -35,7 +35,7 @@ export default function Hero() {
         className="absolute top-1/3 -right-40 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(255,184,0,0.10) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(96, 165, 250,0.10) 0%, transparent 70%)",
           filter: "blur(40px)",
         }}
       />
@@ -44,12 +44,12 @@ export default function Hero() {
         {/* Overline */}
         <Reveal>
           <div className="flex items-center gap-3 mb-6">
-            <span className="w-2 h-2 bg-[#FF3D00] rounded-full animate-pulse" />
+            <span className="w-2 h-2 bg-[#3B82F6] rounded-full animate-pulse" />
             <span
               data-testid="hero-status"
-              className="font-condensed uppercase text-[11px] lg:text-xs tracking-[0.4em] text-[#FF3D00]"
+              className="font-condensed uppercase text-[11px] lg:text-xs tracking-[0.4em] text-[#3B82F6]"
             >
-              Available for Global Clients · Reel Editor 001
+              Available for freelance projects worldwide
             </span>
           </div>
         </Reveal>
@@ -64,7 +64,7 @@ export default function Hero() {
               >
                 I turn <br />
                 raw footage <br />
-                into <span className="text-[#FF3D00]">cinematic</span> <br />
+                into <span className="text-[#3B82F6]">cinematic</span> <br />
                 stories.
               </h1>
             </Reveal>
@@ -84,14 +84,14 @@ export default function Hero() {
                 <MagneticButton
                   data-testid="hero-cta-portfolio"
                   href="#featured"
-                  className="bg-[#FF3D00] text-black font-condensed uppercase font-bold tracking-widest px-7 py-4 hover:bg-[#FFB800] transition-colors"
+                  className="bg-[#3B82F6] text-black font-condensed uppercase font-bold tracking-widest px-7 py-4 hover:bg-[#60A5FA] transition-colors"
                 >
                   View Portfolio <span>→</span>
                 </MagneticButton>
                 <MagneticButton
                   data-testid="hero-cta-trial"
                   href="#contact"
-                  className="border border-[#FF3D00] text-[#FF3D00] font-condensed uppercase font-bold tracking-widest px-7 py-4 hover:bg-[#FF3D00] hover:text-black transition-colors"
+                  className="border border-[#3B82F6] text-[#3B82F6] font-condensed uppercase font-bold tracking-widest px-7 py-4 hover:bg-[#3B82F6] hover:text-black transition-colors"
                 >
                   Get a Free Trial Edit
                 </MagneticButton>
@@ -129,19 +129,19 @@ export default function Hero() {
                 data-testid="hero-video-wrap"
                 onClick={() => setOpen(true)}
                 aria-label="Play featured documentary"
-                className="group relative w-full corner-frame border border-[rgba(255,255,255,0.08)] aspect-[9/12] lg:aspect-[9/13] bg-black overflow-hidden transition-all duration-500 hover:border-[#FF3D00]/60 animate-glow cursor-pointer"
+                className="group relative w-full corner-frame border border-[rgba(255,255,255,0.08)] aspect-[9/12] lg:aspect-[9/13] bg-black overflow-hidden transition-all duration-500 hover:border-[#3B82F6]/60 animate-glow cursor-pointer"
               >
                 {/* Tape label */}
                 <div className="absolute -top-3 left-6 z-20">
-                  <span className="tape-label text-xs">FT-001</span>
+                  <span className="tape-label">Reel · 01</span>
                 </div>
                 {/* Meta strip */}
                 <div className="absolute top-4 right-4 z-20 flex flex-col items-end gap-1 pointer-events-none">
                   <span className="font-condensed text-[10px] tracking-[0.3em] text-white/60 uppercase">
-                    ● REC · 4K
+                    Play Reel
                   </span>
-                  <span className="font-condensed text-[10px] tracking-[0.3em] text-[#FF3D00]/80 uppercase">
-                    ARPITX-CUT
+                  <span className="font-condensed text-[10px] tracking-[0.3em] text-[#3B82F6]/80 uppercase">
+                    ARPITX
                   </span>
                 </div>
 
@@ -157,8 +157,8 @@ export default function Hero() {
                 {/* Play button */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="relative">
-                    <div className="absolute inset-0 rounded-full bg-[#FF3D00] blur-2xl opacity-50 group-hover:opacity-90 transition-opacity" />
-                    <div className="relative w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-[#FF3D00] flex items-center justify-center shadow-[0_0_50px_-5px_rgba(255,61,0,0.7)] group-hover:scale-110 transition-transform">
+                    <div className="absolute inset-0 rounded-full bg-[#3B82F6] blur-2xl opacity-50 group-hover:opacity-90 transition-opacity" />
+                    <div className="relative w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-[#3B82F6] flex items-center justify-center shadow-[0_0_50px_-5px_rgba(59, 130, 246,0.7)] group-hover:scale-110 transition-transform">
                       <svg width="18" height="22" viewBox="0 0 12 14" fill="none" className="ml-1">
                         <path d="M11 6.13397C11.6667 6.51887 11.6667 7.48113 11 7.86603L2 13.0622C1.33333 13.4471 0.5 12.966 0.5 12.1962V1.80385C0.5 1.03405 1.33333 0.552922 2 0.937822L11 6.13397Z" fill="black"/>
                       </svg>
@@ -172,7 +172,7 @@ export default function Hero() {
                   className="absolute inset-0 pointer-events-none opacity-30"
                   style={{
                     background:
-                      "repeating-linear-gradient(to bottom, transparent 0px, transparent 3px, rgba(255,61,0,0.05) 4px, transparent 5px)",
+                      "repeating-linear-gradient(to bottom, transparent 0px, transparent 3px, rgba(59, 130, 246,0.05) 4px, transparent 5px)",
                   }}
                 />
 
@@ -183,7 +183,7 @@ export default function Hero() {
                       <div className="font-display text-lg text-white leading-none">
                         WHY AMERICA <br /> LOVES WAR
                       </div>
-                      <div className="mt-2 font-condensed text-[10px] tracking-[0.3em] text-[#FF3D00] uppercase">
+                      <div className="mt-2 font-condensed text-[10px] tracking-[0.3em] text-[#3B82F6] uppercase">
                         Documentary · Feature
                       </div>
                     </div>
@@ -192,10 +192,10 @@ export default function Hero() {
               </button>
             </Reveal>
             <Reveal delay={350}>
-              <div className="mt-4 flex items-center justify-between text-[11px] font-condensed uppercase tracking-[0.3em] text-[#888888]">
-                <span>SIGNAL LOCK</span>
-                <span>SC / 001</span>
-                <span className="text-[#FF3D00]">◉ LIVE</span>
+              <div className="mt-4 flex items-center justify-between text-[11px] font-condensed uppercase tracking-[0.3em] text-[#8a8a8a]">
+                <span>Featured Work</span>
+                <span>01 / 01</span>
+                <span className="text-[#3B82F6]">● Auto</span>
               </div>
             </Reveal>
           </div>
@@ -206,7 +206,7 @@ export default function Hero() {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent
           data-testid="hero-video-lightbox"
-          className="max-w-5xl w-[95vw] p-0 bg-black border border-[#FF3D00]/40"
+          className="max-w-5xl w-[95vw] p-0 bg-black border border-[#3B82F6]/40"
         >
           <DialogTitle className="sr-only">Why America Loves War</DialogTitle>
           <div className="aspect-video w-full">

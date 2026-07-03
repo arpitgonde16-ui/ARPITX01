@@ -39,21 +39,21 @@ export default function FAQ() {
     <section
       id="faq"
       data-testid="faq-section"
-      className="relative py-24 lg:py-32 bg-[#0a0a0a]"
+      className="relative py-24 lg:py-32 bg-[#050505]"
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10 grid grid-cols-12 gap-8 lg:gap-16">
         <div className="col-span-12 lg:col-span-4">
           <Reveal>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-[1px] bg-[#FF3D00]" />
-              <span className="font-condensed uppercase text-xs tracking-[0.4em] text-[#FF3D00]">
-                Intel · FAQ
+              <div className="w-8 h-[1px] bg-[#3B82F6]" />
+              <span className="font-condensed uppercase text-xs tracking-[0.4em] text-[#3B82F6]">
+                Frequently Asked
               </span>
             </div>
           </Reveal>
           <Reveal delay={100}>
             <h2 className="font-display uppercase text-5xl md:text-6xl lg:text-6xl leading-[0.9] tracking-tight text-white">
-              Answers <br /> before <br /> <span className="text-[#FF3D00]">you ask.</span>
+              Answers <br /> before <br /> <span className="text-[#3B82F6]">you ask.</span>
             </h2>
           </Reveal>
           <Reveal delay={200}>
@@ -71,14 +71,14 @@ export default function FAQ() {
                 <AccordionItem
                   value={`item-${i}`}
                   data-testid={`faq-item-${i}`}
-                  className="border-b border-[rgba(255,255,255,0.08)] data-[state=open]:border-l-2 data-[state=open]:border-l-[#FF3D00] data-[state=open]:pl-6 transition-all"
+                  className="border-b border-[rgba(255,255,255,0.08)] data-[state=open]:border-l-2 data-[state=open]:border-l-[#3B82F6] data-[state=open]:pl-6 transition-all"
                 >
                   <AccordionTrigger className="text-left py-6 hover:no-underline group">
                     <span className="flex items-baseline gap-4 flex-1">
-                      <span className="font-condensed text-xs tracking-[0.3em] text-[#FF3D00]">
+                      <span className="font-condensed text-xs tracking-[0.3em] text-[#3B82F6]">
                         {String(i + 1).padStart(2, "0")}
                       </span>
-                      <span className="font-display uppercase text-lg lg:text-xl text-white leading-tight group-hover:text-[#FFB800] transition-colors">
+                      <span className="font-display uppercase text-lg lg:text-xl text-white leading-tight group-hover:text-[#60A5FA] transition-colors">
                         {f.q}
                       </span>
                     </span>
