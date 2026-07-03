@@ -9,7 +9,7 @@ const cards = [
     platform: "Instagram Reels",
     duration: ":45",
     desc: "3 professional editing tricks — J Cuts, Match Cuts, Color Consistency.",
-    link: "https://www.instagram.com/reel/DaTJbjWCHAN/",
+    link: "https://www.instagram.com/reel/DaTJbjWCHAN/?igsh=MXJzY3k4aG03bG9wNQ==",
   },
   { real: false, title: "Cinematic B-Roll Cut", category: "B-Roll", duration: "—" },
   { real: false, title: "Documentary Teaser", category: "Doc Trailer", duration: "—" },
